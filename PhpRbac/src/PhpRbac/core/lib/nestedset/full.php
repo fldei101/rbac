@@ -226,6 +226,7 @@ class FullNestedSet extends BaseNestedSet implements ExtendedNestedSet
      */
     function descendantsConditional($ConditionString,$AbsoluteDepths=false,$Rest=null)
     {
+        $DepthConcat = "";
         if (!$AbsoluteDepths)
             $DepthConcat="- (sub_tree.innerDepth )";
         $Arguments=func_get_args();
